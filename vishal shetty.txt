@@ -1,0 +1,105 @@
+/*reverse a number*/
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter the number");
+    scanf("%d", &n);
+    while(n!=0)
+    {
+       int r=n%10;
+       printf("%d", r);
+       n=n/10;
+    }
+    
+}
+
+#2
+#include<stdio.h>
+int main()
+{
+    int n,sum;
+    char choice;
+    do{
+    scanf("%d",&n);
+    if(n>0)
+    {
+        printf("positive");
+    }
+    else if(n<0)
+    {
+        printf("negative");
+    }
+    else
+    {
+        printf("zero");
+        
+    }printf("want to continue.[Y]es/[N]o?");
+    
+    choice =getc(stdin);
+    choice =getc(stdin);
+    }    while(choice == 'Y' || choice == 'y');
+    return 0;
+    }
+#include<stdio.h>
+int main()
+{
+    int n,i,flag=0;
+    printf("enter the number");
+    scanf("%d",&n);
+    for(i-0;i<n;i++)
+    if(n%i==0)
+    {
+        printf("prime nor composite");
+    }
+    else if(n==0 || n==1)
+    {
+        printf("not prime");
+    }
+    else
+    {
+        printf("no is prime");
+    }
+    }
+    #3
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int r=1;r<=n;r++)
+ {
+     for(int c=1;c<=r;c++)
+        {
+            printf("%c ",c+64);
+            
+        }
+        printf("\n");
+}
+    return 0;
+}
+
+#4(reverse of above)
+
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int r=n;r>=1;r--)
+    
+     {
+        for(int c=1;c<=n-r;c++)
+        printf(" ");
+        for(int c=r;c>=1;c--)
+            {
+                printf("%c",c+64);
+                
+            }
+            printf("\n");
+           
+    }
+        return 0;
+}
+
