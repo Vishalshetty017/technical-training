@@ -1,0 +1,32 @@
+//swaping of two variable
+#include <stdio.h>
+
+int main()
+{
+    int n1,n2,tmp;
+    printf("enter the first number");
+    scanf("%d",&n1);
+    printf("enter the 2nd number");
+    scanf("%d",&n2);
+    tmp=n1;
+    n1=n2;
+    n2=tmp;
+    printf("the 1st element= %d",n1);
+    printf("the 2nd element= %d",n2);
+}
+
+//smallest number
+
+#include <stdio.h>
+
+int main()
+{
+    int  arr[]={1,32,2,45,65};
+    int length = sizeof(arr)/sizeof(arr[0]);
+    int min=arr[0];
+    for(int i=0;i<length;i++)
+    if(arr[i]<min)
+    min=arr[i];
+     printf("min term =%d",min);
+     return 0;
+}
